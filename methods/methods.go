@@ -15,30 +15,6 @@ type Library struct {
 	IsOpen       bool     // Флаг, открыта ли библиотека сейчас | №10
 }
 
-//type LibraryFull struct {
-//	libraryFull []Library
-//}
-
-/*
-func (l *Library) FindLibrary(name string) string { // | №1
-
-		for i := 0; i < len(l.NameLibrary); i++ {
-			if l.NameLibrary[i] == name {
-				return fmt.Sprintf("Такая библиотека нахоится по адресу", l.Address)
-			}
-		}
-		return "Библиотека с таким названием не найдена"
-	}
-
-	func (l *Library) FindAddress(address string) string {
-		for i := 0; i < len(l.Address); i++ {
-			if l.Address[i] == address {
-				return fmt.Sprintf("По этому адресу находится библитека", l.NameLibrary)
-			}
-		}
-		return "По такому адресу не найдена ни одна библиотека"
-	}
-*/
 func (l *Library) AddBook(count int) {
 	l.BooksCount += count
 }
